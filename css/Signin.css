@@ -1,0 +1,201 @@
+/* image optimization */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Mulish', sans-serif;
+}
+
+html{
+  overflow: hidden;
+}
+
+.bg{
+  position: relative;
+  width: 800px;
+  height:1024px;
+  z-index: 2;
+  right: -250px;
+}
+
+.logo{
+  position: fixed;
+  width: 500px;
+  height: 190px;
+  z-index: 3;
+  bottom: 450px;
+}
+
+.caption{
+  position: absolute;
+}
+
+.movie_bg{
+  position: relative;
+  left: -300px;
+  width: 800px;
+  height:1024px;
+}
+
+.label1{
+  z-index: 3;
+  padding: 1px;
+  position: relative;
+  top: -650px;
+  right: -450px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+
+  /* identical to box height */
+  letter-spacing: 0.003em;
+
+  color: rgba(255, 255, 255, 0.8);
+}
+
+article{
+  display: flex;
+  flex-direction: row;
+}
+
+.signin-form{
+  width: fit-content;
+  background-color: #fff;
+  padding: 0 25px 0 25px;
+  gap: 10px;
+  margin-bottom: 20%;
+  right: -50px;
+  position:sticky;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 7;
+}
+
+.signin-txt>h2{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+
+  /* identical to box height */
+  letter-spacing: 0.003em;
+
+  color: #121212;
+}
+
+.signin-txt{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.signin-txt>p{
+  width: 396px;
+  height: 44px;
+  left: 883px;
+  top: 246px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.007em;
+
+  color: #AAAAAA;
+}
+
+.formData{
+  box-sizing: border-box;
+  width: 400px;
+  height: 64px;
+  left: 0%;
+  right: 0%;
+  top: 34.02%;
+  bottom: 0%;
+
+  background: #FCFDFE;
+
+  /* Border and Line */
+  border: 1px solid #DEDEDE;
+  border-radius: 16px;
+}
+
+.signin-btn{
+  text-align: center;
+  position: relative;
+  display: block;
+  width: 400px;
+  margin: auto;
+  height: 64px;
+  bottom: -15px;
+  text-decoration: none;
+  padding: 0.6rem 2.6rem 0.6rem 2.6rem;
+  background-color: #5F2EEA;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 16px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+form{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form>p{
+  position: relative;
+  bottom: -40px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.005em;
+
+  color: #8692A6;
+}
+
+form>p a{
+  position: relative;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #5F2EEA;
+  text-decoration: underline;
+}
+
+.main{
+  display: block;
+  width: 450px;
+  height: 450px;
+  position:absolute;
+}
+
+.phoneLogo{
+  width: 78.73px;
+  height: 20.23;
+  display: none;
+}
+
+@media only screen and (max-width: 567px) {
+  .phoneLogo{
+    display: block;
+  }
+  .signin-form{
+  margin-bottom: 50%;
+}
+}
